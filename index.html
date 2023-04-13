@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish ranjan - programmer, Developer</title>
+    <link rel="stylesheet" href="style1.css">
+    <!-- <script src="index.js" defer></script> -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logoimage.png" alt="logo" class="logo"> -->
+                <img src="images/logonamee.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Developer/Programmer</p>
+                <h1>Hello there,<br>I'm <span>Ashish</span> from INDIA!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background-char.png" alt="my image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde esse earum maiores cupiditate distinctio doloremque rem consectetur dolor porro ipsa, ad alias quos fugiat voluptatibus aspernatur dolorum exercitationem provident voluptas recusandae quidem amet? Ab quis quam deserunt fugit debitis, ratione eligendi itaque quia asperiores praesentium recusandae qui quos, porro quidem minus atque. Id recusandae ab, sed consequatur molestias laboriosam, ipsa rem mollitia facere sit consequuntur accusantium maxime? Consectetur, adipisci illum libero officiis quasi soluta? Incidunt velit maxime consectetur odit reprehenderit.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links onclick="opentab('education')"">Education</p>
+                        <p class="tab-links onclick="opentab('experience')"">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programmer</span><br>Competetive programming and problem solving.</li>
+                            <li><span>Web Developer</span><br>Web app development.</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - Current</span><br>Computer Science Engineering at Heritage Institute of Technology</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Currently i am a fresher looking for some Opportunity</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/profile2.png">
+                    <div class="layer">
+                        <h3>Portfolio site</h3>
+                        <p>This is the website which you are currently surfing</p>
+                        <a href="#"><i class="fa-duotone fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/profile1.png">
+                    <div class="layer">
+                        <h3>Chrome Extension</h3>
+                        <p>This is an awesome chrome extension.</p>
+                        <a href="#"><i class="fa-duotone fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let tablinks= document.getElementsByClassName("tab-links");
+        let tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
